@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+
+body {
+    background-color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;;
+}
+
+
+
+h3 {
+    color:hsl(0, 0%, 95%);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+    line-height: 2;
+    color: hsla(0, 0%, 100%, 0.75);
+    
+}
+
+
+.main-wrapper {
+    width: min(90%, 1000px);
+    
+    margin: 150px auto;
+}
+
+.bright-orange {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%) ;
+}
+
+.dark-cyan {
+    background-color: hsl(184, 100%, 22%);
+    color:  hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+.btn:hover {
+    transition: all .2s ease-in-out;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+}
+
+.card {
+    padding: 40px;
+    
+}
+
+.card:first-of-type {
+    border-radius: 10px 10px 0 0;
+}
+
+.card:last-of-type {
+    border-radius: 0 0 10px 10px;
+}
+
+@media ( min-width:768px){
+    .card-columns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card:first-of-type {
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .card:last-of-type {
+        border-radius: 0 10px 10px 0;
+    }
+}
